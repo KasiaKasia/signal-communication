@@ -1,0 +1,14 @@
+<p>1 example</p>
+<div><button type="submit" (click)="set()">set</button></div> 
+<p>2 example</p>
+<div>
+    <form [formGroup]="formGroup" (ngSubmit)="update()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" formControlName="name"><br><br>
+        
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" formControlName="description"><br><br>
+        
+        <input type="submit" value="add">
+    </form>     
+</div> 

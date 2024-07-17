@@ -1,0 +1,8 @@
+<div>{{currentMessage}}</div>
+<div>
+    @for (item of currentArrayObjects; track item.id; let idx = $index ) {
+    <div>
+        {{item.id}} {{item.name}} {{item.description}}
+    </div>
+    }
+</div>
